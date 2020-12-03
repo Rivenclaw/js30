@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <link rel="canonical" href="https://ubuntix.pl/jak-zainstalowa-google-chrome-na-ubuntu-18-04-lts"/>
+    <title>Jak zainstalować Google Chrome na Ubuntu 18.04 LTS | Ubuntix</title>
+    <meta name="description" content="Google Chrome jest obecnie jedną z najpotężniejszych przeglądarek internetowych i naturalnie wielu użytkowników próbuje zainstalować ją w swoim systemie. Ta próba nie..."/>
+    <meta property="og:url" content="https://ubuntix.pl/jak-zainstalowa-google-chrome-na-ubuntu-18-04-lts"/>
+    <meta property="og:site_name" content="Ubuntix.pl"/>
+    <meta property="og:title" content="Jak zainstalować Google Chrome na Ubuntu 18.04 LTS | Ubuntix"/>
+    <meta property="og:description" content="Google Chrome jest obecnie jedną z najpotężniejszych przeglądarek internetowych i naturalnie wielu użytkowników próbuje zainstalować ją w swoim systemie. Ta próba nie..."/>
+    <meta property="og:type" content="article"/>
+    <script type="text/javascript" src="/ubuntix.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5431519-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-5431519-13');
+    </script>
+    <script data-ad-client="ca-pub-4487646155067683" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body oncopy="addLink()">
+<div style="outline:none" tabindex="-1" role="group">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item is-size-4-desktop" href="/"><img src="/img/logo.png"></a>
+                <a role="button" class="navbar-burger burger" id="mobmenu" aria-label="menu" aria-expanded="false" data-target="topNavbar"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+            </div>
+            <div id="topNavbar" class="navbar-menu">
+                <div class="navbar-end"><a class="navbar-item" href="/cat/2">Centos</a><a class="navbar-item" href="/?q=debian">Debian</a><a class="navbar-item" href="/cat/1">Ubuntu</a></div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-8">
+                <div class="column is-8">
+<article><h1>Jak zainstalować Google Chrome na Ubuntu 18.04 LTS</h1><br /><p> Google Chrome jest obecnie jedną z najpotężniejszych przeglądarek internetowych i naturalnie wielu użytkowników próbuje zainstalować ją w swoim systemie. Ta próba nie jest jednak owocna, ponieważ ta popularna przeglądarka internetowa nie jest dostępna u żadnego dystrybutora systemu Linux w oprogramowaniu Ubuntu. Jak więc zainstalować Google Chrome w naszym systemie? </p><p> Ubuntu oferuje następujące dwa sposoby: </p><ul><li> Pobierz i zainstaluj Google Chrome za pomocą wiersza polecenia. </li><li> Pobierz Google Chrome za pomocą już zainstalowanej przeglądarki internetowej (głównie FireFox) i zainstaluj graficznie. </li></ul><p> W tym samouczku nauczymy się, jak pobrać i zainstalować Google Chrome (nie Chromium w wersji OpenSource) w naszym systemie Ubuntu. Pokażemy Ci również, jak odinstalować za pomocą wiersza polecenia i interfejsu graficznego. Należy pamiętać, że wykonaliśmy poniższe kroki na Ubuntu 18.04 LTS (Bionic Beaver). </p><p> Przed zainstalowaniem Google Chrome ważne jest, aby wiedzieć, czy korzystasz z 32-bitowego, czy 64-bitowego systemu Ubuntu. Google przerwał swoją wersję Chrome dla 32-bitowych systemów Linux, dlatego możesz zainstalować ją tylko, jeśli Twój Ubuntu jest 64-bitowy. </p><h2> Czy Twoje Ubuntu jest 32-bitowe czy 64-bitowe? </h2><p> Aby móc zainstalować Google Chrome, musisz używać 64-bitowej wersji Ubuntu. Aby to sprawdzić za pomocą wiersza polecenia, wykonaj następujące kroki: </p><ol><li> Otwórz <strong> Terminal </strong>. </li><li> Użyj następującego polecenia, aby pobrać szczegóły procesora z plików sysfs i / proc / cpuinfo: </li></ol> <pre>$ lscpu</pre> <p> To polecenie wyświetli następujące dane wyjściowe: </p><p><img src="https://pic.ubuntix.pl/1/255.png" style="display:block;"></p><p> Pozycja trybu (-ów) CPU informuje o smaku Ubuntu działasz w systemie; <strong> 32-bit </strong> oznacza, że ​​korzystasz z 32-bitowego systemu operacyjnego Linux, <strong> 32-bit, 64-bit </strong> oznacza, że ​​korzystasz z 64-bitowego systemu operacyjnego. </p><p> Jeśli korzystasz z 64-bitowego systemu Ubuntu, możesz kontynuować instalację. </p><h2> Instalacja za pomocą wiersza polecenia </h2><p> Aby zainstalować Google Chrome za pomocą wiersza polecenia, wykonaj następujące kroki: </p><p> Otwórz terminal <strong></strong> i wprowadź następujące polecenie: </p> <pre>$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</pre> <p> Wskazówka: możesz również skopiuj to polecenie z tego samouczka, wybierając i kopiując je za pomocą Ctrl + c, a następnie wklejając je w Terminalu, klikając prawym przyciskiem myszy lokalizację kursora, a następnie klikając polecenie Wklej z menu. </p><p><img src="https://pic.ubuntix.pl/1/256.png" style="display:block;"></p><p> Postęp instalacji będzie można wyświetlić w następujący sposób: </p><p><img src="https://pic.ubuntix.pl/1/257.png" style="display:block;"></p><p> Teraz pakiet instalacyjny zostanie zapisany w systemie w bieżącym katalogu, tj. / Home / <nazwa użytkownika> </p><p> Wpisz następujące polecenie, aby zainstalować pobrany pakiet: </p> <pre>$ sudo dpkg –i google-chrome-stable_current_amd64.deb</pre> <p> Uwaga: Aby uruchomić to polecenie, musisz być superużytkownikiem. </p><p><img src="https://pic.ubuntix.pl/1/258.png" style="display:block;"></p><p> Google Chrome powinien być teraz zainstalowany w twoim systemie. Możesz go uruchomić, wykonując czynności opisane w dalszej części tego artykułu. </p><p><em> Uwaga: Jeśli pakiet instalacyjny został pobrany w innym miejscu, musisz podać całą ścieżkę w poleceniu </em> dpkg <em>. </em></p><h2> Graficzna instalacja Google Chrome </h2><p> Ten proces pokaże, jak graficznie zainstalować Google Chrome w systemie.Do pobrania pakietu instalacyjnego będziesz używać już zainstalowanej przeglądarki internetowej. W naszym przypadku będziemy używać FireFox, domyślnej przeglądarki Ubuntu 18. </p><p> Pobierz pakiet instalacyjny z oficjalnej strony pobierania Google. </p><p><img src="https://pic.ubuntix.pl/1/259.png" style="display:block;"></p><p> Kliknij przycisk <strong> Pobierz Chrome </strong>. </p><p> Otwiera się następująca strona z prośbą o wybranie pakietu do zainstalowania. </p><p><img src="https://pic.ubuntix.pl/1/260.png" style="display:block;"></p><p> Ponieważ instalujemy Chrome na Ubuntu, wybieramy pierwszą opcję. Zostaniesz również poproszony o wyrażenie zgody na warunki świadczenia usług. </p><p> Kliknij przycisk <strong> Zaakceptuj i zainstaluj </strong>, aby kontynuować, jeśli akceptujesz warunki świadczenia usług. </p><p> Otworzy się następujące okno dialogowe z prośbą o zapisanie pakietu lub uruchomienie go przez instalację oprogramowania. </p><p><img src="https://pic.ubuntix.pl/1/261.png" style="display:block;"></p><p> Zalecamy zapisanie pliku i kliknięcie <strong> OK </strong>. </p><p> Pakiet instalacyjny google-chrome-stable_current_amd64.deb zostanie zapisany w folderze Pobrane. </p><p> Otwórz pakiet instalacyjny, klikając go dwukrotnie w folderze <strong> Downloads </strong>. </p><p> W aplikacji zostanie otwarte następujące okno dialogowe: </p><p><img src="https://pic.ubuntix.pl/1/262.png" style="display:block;"></p><p> Kliknij przycisk <strong> Zainstaluj </strong>. </p><p> Zostaniesz poproszony o uwierzytelnienie, ponieważ tylko superużytkownik może zainstalować oprogramowanie w Ubuntu. </p><p><img src="https://pic.ubuntix.pl/1/263.png" style="display:block;"></p><p> Wprowadź hasło i kliknij <strong> Uwierzytelnij </strong>. </p><p> Rozpocznie się proces instalacji i będzie można zobaczyć postęp w następującym oknie dialogowym: </p><p><img src="https://pic.ubuntix.pl/1/264.png" style="display:block;"></p><p> Google Chrome powinien być teraz zainstalowany w systemie. Możesz go uruchomić, wykonując czynności opisane poniżej. </p><h2> Uruchamianie Google Chrome </h2><p> Po udanej instalacji będziesz mógł uruchomić Google Chrome na następujące sposoby: </p><ul><li> Wpisując Google Chrome w Ubuntu Dash. </li></ul><p> LUB </p><ul><li> Dostęp do Google Chrome z menu Aplikacje. </li></ul><p><img src="https://pic.ubuntix.pl/1/265.png" style="display:block;"></p><p> Przy pierwszym uruchomieniu Chrome pojawi się następujący komunikat: </p><p><img src="https://pic.ubuntix.pl/1/266.png" style="display:block;"></p><p> Sprawdź wybrane opcje; Google Chrome uruchomi się teraz! </p><p> Zaletą instalacji Chrome za pośrednictwem oficjalnego instalatora jest to, że zostaniesz zaktualizowany, jeśli dostępna będzie nowsza wersja oprogramowania. </p><h2> Odinstalowywanie Google Chrome </h2><p> Przyjrzyjmy się następującym dwóm sposobom całkowitego odinstalowania Google Chrome z systemu: </p><ul><li> Za pomocą wiersza poleceń </li><li> Za pomocą interfejsu graficznego </li></ul><h3> Za pomocą wiersza poleceń </h3><p> Aby odinstalować Google Chrome, uruchom te polecenia z terminala: </p> <pre>$ sudo apt-get purge google-chrome-stable</pre> <p> (To polecenie usunie instalację Chrome.) <em><br /></em></p> <pre>$ rm ~/.config/google-chrome/ -rf</pre> <p> (To polecenie usunie niestandardowe ustawienia, takie jak wszelkie wtyczki, które mogłeś zainstalować dla Chrome). <br /><img src="https://pic.ubuntix.pl/1/267.png" style="display:block;"></p><p> Kontynuuj z Y, aby usunąć instalację. </p><h3> przez interfejs graficzny </h3><p> Aby odinstalować Google Chrome za pomocą interfejsu graficznego Ubuntu, wykonaj następujące czynności: </p><p> Otwórz <strong> Synaptic Package Manager </strong> z Ubuntu Dash. </p><p> Zainstaluj go za pomocą oprogramowania Ubuntu, jeśli nie jest ono jeszcze zainstalowane w twoim systemie. </p><p> Zostaniesz poproszony o podanie uwierzytelnienia, ponieważ tylko administrator może odinstalować oprogramowanie na Ubuntu.</p><p> Wyszukaj <strong> Google Chrome </strong> za pomocą przycisku wyszukiwania w następujący sposób: </p><p><img src="https://pic.ubuntix.pl/1/268.png" style="display:block;"></p><p> W wynikach wyszukiwania oznaczonych kolorem zielonym będzie można zobaczyć pozycję stabilną w Google Chrome. </p><p> Wybierz <strong> google-chrome-stable </strong>, kliknij prawym przyciskiem myszy, a następnie kliknij <strong> Oznacz do całkowitego usunięcia </strong> z menu. </p><p><img src="https://pic.ubuntix.pl/1/269.png" style="display:block;"></p><p> Google Chrome zostanie wybrany do usunięcia. </p><p> Teraz kliknij przycisk <strong> Zastosuj </strong> znajdujący się u góry. </p><p> Pojawi się następujące okno dialogowe: </p><p><img src="https://pic.ubuntix.pl/1/270.png" style="display:block;"></p><p> Kliknij <strong> Zastosuj </strong>, aby całkowicie usunąć Google Chrome. </p><p> Google Chrome zostanie usunięty z twojego systemu. Teraz oczywiście nie potrzebujemy naszego systemu, aby dostarczał nam aktualizacje; wykonaj następujące kroki, aby wyłączyć aktualizacje dla Chrome. </p><p> Otwórz <strong> Oprogramowanie i aktualizacje </strong> z Ubuntu Dash i kliknij kartę <strong> Inne oprogramowanie </strong>. </p><p><img src="https://pic.ubuntix.pl/1/271.png" style="display:block;"></p><ol><li> Wybierz <strong> http://dl.google.com/linux/chrome/deb/stable </strong><strong> main </strong> pozycję i kliknij przycisk <strong> Usuń </strong>. </li><li> Podaj hasło administratora i kliknij <strong> Uwierzytelnij </strong>. </li></ol><p> Odinstalowałeś Google Chrome z systemu i wyłączyłeś dla niego aktualizacje. </p><p> Widzieliśmy, że mimo wszystko instalacja i odinstalowanie Google Chrome z Ubuntu nie jest zbyt trudne. Wystarczy uruchomić kilka poleceń lub użyć przyjaznego interfejsu graficznego, aby zainstalować oprogramowanie inne niż Linux. </p></article>
+            <h5 class="is-size-5 is-uppercase has-text-weight-semibold side-title" id="komentarze">Komentarze</h5>
+			<div>
+                <form method="post">
+				<div class="media">
+                    <input type="hidden" name="postid" value="19">
+                    <input type="hidden" name="posturl" value="jak-zainstalowa-google-chrome-na-ubuntu-18-04-lts">
+					<input type="text" name="username" class="input" placeholder="Nazwa" value="">
+                </div>
+				<div class="media">
+					<textarea class="input" name="content" placeholder="Komentarz" style="height:5em;"></textarea>
+				</div>
+				<div class="media">
+                    <button class="button is-info" type="submit">Opublikuj komentarz</button>
+				</div>
+                </form>
+			</div>                </div>
+                
+                <div class="column is-4">
+                    <div class="block">
+                        <form class="field has-addons" action="/">
+                                <div class="control is-expanded"><input type="text" class="input" name="q" placeholder="Szukaj" value=""/></div>
+                                <div class="control"><button class="button is-info" type="submit"><span class="icon"></span></button></div>
+                        </form>
+                    </div>
+                    <div class="block">
+                        <h5 class="is-size-5 is-uppercase has-text-weight-semibold side-title">Najnowsze komentarze</h5>
+                        <small>
+                            <div class="block">
+
+                                <p><strong>nie wiem</strong> &rarr; <a href="/jak-zainstalowa-i-skonfigurowa-serwer-www">Jak zainstalować i skonfigurować serwer WWW Apache na Ubuntu</a></p>
+                                <p><strong>Jonatan</strong> &rarr; <a href="/jak-odzyska-usuni-te-pliki-w-ubuntu-za-pomoc">Jak odzyskać usunięte pliki w Ubuntu za pomocą TestDisk</a></p>
+                                <p><strong>jd</strong> &rarr; <a href="/dodawaj-konta-u-ytkownik-w-i-zarz-dzaj-nimi-w">Dodawaj konta użytkowników i zarządzaj nimi w Ubuntu 18.04 LTS</a></p>
+                                <p><strong>Sławek</strong> &rarr; <a href="/jak-skonfigurowa-serwer-dhcp-na-ubuntu">Jak skonfigurować serwer DHCP na Ubuntu</a></p>
+                                <p><strong>Marcin</strong> &rarr; <a href="/jak-skonfigurowa-sie-za-pomoc-netplan-na-ubuntu">Jak skonfigurować sieć za pomocą Netplan na Ubuntu</a></p>
+                                <p><strong>KD743</strong> &rarr; <a href="/10-miertelnych-polece-kt-rych-nigdy-nie">10 śmiertelnych poleceń, których nigdy nie powinieneś uruchamiać w systemie Linux</a></p>
+                                <p><strong>Sawan1@o2.pl</strong> &rarr; <a href="/3-sposoby-na-wy-czenie-wy-czenie-systemu">3 sposoby na wyłączenie / wyłączenie systemu Ubuntu</a></p>
+                                <p><strong>Adam</strong> &rarr; <a href="/jak-skonfigurowa-sie-za-pomoc-netplan-na-ubuntu">Jak skonfigurować sieć za pomocą Netplan na Ubuntu</a></p>
+                                <p><strong>Jaceksikora1</strong> &rarr; <a href="/jak-pobiera-filmy-z-youtube-a-na-ubuntu-18-04-lts">Jak pobierać filmy z YouTube'a na Ubuntu 18.04 LTS</a></p>
+                                <p><strong>klesk</strong> &rarr; <a href="/jak-zainstalowa-i-skonfigurowa-serwer-www">Jak zainstalować i skonfigurować serwer WWW Apache na Ubuntu</a></p>                            </div>
+                        </small>
+                    </div>
+                    <div class="block">
+                        <h5 class="is-size-5 is-uppercase has-text-weight-semibold side-title">Popularne posty</h5>
+                        <small>
+                            <div class="panel-list">
+
+                                <a class="panel-block" href="/planowanie-zadania-w-systemie-linux-za-pomoc">Planowanie zadania w systemie Linux za pomocą Crontab</a>
+                                <a class="panel-block" href="/jak-zabija-procesy-zombie-w-ubuntu-18-04-lts">Jak zabijać procesy zombie w Ubuntu 18.04 LTS</a>
+                                <a class="panel-block" href="/jak-ustawi-domy-lny-emulator-terminala-gnome-na">Jak ustawić domyślny emulator terminala Gnome na Ubuntu 18.04 LTS</a>
+                                <a class="panel-block" href="/jak-planowa-zadania-w-systemie-ubuntu-18-04-za">Jak planować zadania w systemie Ubuntu 18.04 za pomocą Crontab</a>
+                                <a class="panel-block" href="/jak-znale-adres-ip-w-systemie-linux">Jak znaleźć adres IP w systemie Linux</a>
+                                <a class="panel-block" href="/rozwi-zane-dpkg-b-d-potrzebujesz-opcji">[ROZWIĄZANE] „dpkg: błąd: potrzebujesz opcji działania”</a>
+                                <a class="panel-block" href="/jak-zainstalowa-google-chrome-na-ubuntu-18-04-lts">Jak zainstalować Google Chrome na Ubuntu 18.04 LTS</a>
+                                <a class="panel-block" href="/pot-ny-wiat-skr-t-w-klawiaturowych-ubuntu">Potężny świat skrótów klawiaturowych Ubuntu</a>
+                                <a class="panel-block" href="/plik-host-w-w-systemie-linux">Plik hostów w systemie Linux</a>
+                                <a class="panel-block" href="/uzyskaj-linuksa-informacje-o-systemie-i-sprz-cie">Uzyskaj Linuksa Informacje o systemie i sprzęcie w wierszu poleceń</a>
+                                <a class="panel-block" href="/8-sposob-w-aby-uzyska-pomoc-na-temat-pow-oki">8 sposobów, aby uzyskać pomoc na temat powłoki Linux</a>
+                                <a class="panel-block" href="/jak-przegl-da-pliki-dziennika-systemu-w-systemie">Jak przeglądać pliki dziennika systemu w systemie Ubuntu 18.04 LTS</a>
+                                <a class="panel-block" href="/jak-skonfigurowa-niestandardowy-d-wi-k-startowy">Jak skonfigurować niestandardowy dźwięk startowy w Ubuntu 18.04 LTS</a>
+                                <a class="panel-block" href="/praca-z-wieloma-kartami-terminali-w-ubuntu">Praca z wieloma kartami terminali w Ubuntu</a>
+                                <a class="panel-block" href="/praca-z-edytorem-vi-w-systemie-linux">Praca z edytorem Vi w systemie Linux</a>                            </div>
+                        </small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer has-text-white has-background-info">
+        <div class="content has-text-centered">
+            <p>© Ubuntix.pl 2020</p>
+        </div>
+    </footer>
+</div>
+<script>
+mobmenu.onclick = function() {
+var x = document.getElementById("topNavbar");
+x.classList.toggle("show");
+}
+</script>
+</body>
+</html>
